@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BluetoothClient</string>
+    <string name="hum">hum</string>
+    <string name="illum">illum</string>
+    <string name="___">___</string>
+    <string name="temp">temp</string>
+    <string name="lcd_backlight">lcd backlight</string>
+    <string name="response">Response:</string>
+
+</resources>

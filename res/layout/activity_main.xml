@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   
+	  
+    android:columnCount="1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/helloButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onTempButtonClick"
+        android:text="@string/temp" />
+
+    <Button
+        android:id="@+id/humButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/helloButton"
+        android:layout_alignBottom="@+id/helloButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="onHumButtonClick"
+        android:text="@string/hum" />
+
+    <Button
+        android:id="@+id/illumButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/humButton"
+        android:layout_alignBottom="@+id/humButton"
+        android:layout_alignParentEnd="true"
+        android:onClick="onIllumButtonClick"
+        android:text="@string/illum" />
+
+    <TextView
+        android:id="@+id/valTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/captionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/___"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/captionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:text="@string/response"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:onClick="onLcdBacklightButtonClick"
+        android:text="@string/lcd_backlight" />
+
+</RelativeLayout>
+<!-- android:background="@menu/main" -->
